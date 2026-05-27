@@ -24,7 +24,7 @@ Add the crate:
 
 ```toml
 [dependencies]
-link-bpm = "0.1"
+link-bpm-rs = "0.1"
 ```
 
 Print the current Link BPM:

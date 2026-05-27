@@ -1,5 +1,5 @@
 [package]
-name = "link-bpm"
+name = "link-bpm-rs"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.75"
@@ -11,6 +11,9 @@ readme = "README.md"
 keywords = ["ableton", "link", "bpm", "tempo", "music"]
 categories = ["multimedia::audio", "network-programming"]
 exclude = ["target/"]
+
+[lib]
+name = "link_bpm"
 
 [dependencies]
 log = "0.4"
