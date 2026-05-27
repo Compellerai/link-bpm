@@ -1,0 +1,23 @@
+[package]
+name = "link-bpm"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["Compeller.ai"]
+license = "MIT OR Apache-2.0"
+description = "Unofficial clean-room passive BPM listener for Ableton Link sessions"
+repository = "https://github.com/Compellerai/link-bpm"
+readme = "README.md"
+keywords = ["ableton", "link", "bpm", "tempo", "music"]
+categories = ["multimedia::audio", "network-programming"]
+exclude = ["target/"]
+
+[dependencies]
+log = "0.4"
+socket2 = { version = "0.5", features = ["all"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+env_logger = "0.11"
